@@ -1,12 +1,11 @@
-function summation(k) {
+function summation() {
     let sum = 0;
-    return function() {
-        return sum = sum + k;
+    return function(num) {
+        return sum = sum + num;
     };
 };
 
-const totalSum = summation(4);
+const totalSum = summation();
 
-console.log(totalSum());
-console.log(totalSum());
-console.log(totalSum());
+console.log(totalSum(4));
+console.log(totalSum(5));
